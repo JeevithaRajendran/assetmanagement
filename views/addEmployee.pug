@@ -1,0 +1,70 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		style 
+			include index.css
+		title Employee details
+body
+	h1 Adding a new employee
+	div(class='update')
+		form(action="/employees" method="POST")
+			div(class='id')
+				input(
+					type="number"
+					id="empId" 
+					name="empId" 
+					placeholder="EmployeeID"
+					required
+				)
+			div(class='name')    
+				input( 
+					type="text"
+					id="empName" 
+					name="empName" 
+					placeholder="Name" 
+					required
+				)  
+			div(class='designation')    
+				input( 
+					type="text"
+					id="designation" 
+					name="designation" 
+					placeholder="Designation" 
+					required
+				)      
+			div(class='dept')
+				input(
+					type="text"
+					id="department"
+					name="department"
+					placeholder="Department"
+					required
+				)
+			div(class='branch')
+				input(
+					type="text"
+					id="branch"
+					name="branch"
+					placeholder="Branch"
+					required
+				)
+			div(class='doj')
+				input(
+					type="date"
+					id="dateofjoin"
+					name="dateofjoin"
+					placeholder="dateofjoin"
+					required
+				)
+			div
+				input(
+					type="reset"
+					value="Reset"
+					class='btn'
+				)      
+				input(
+					type="submit"
+					value="Create"
+					class='btn'
+				)  
+			a(href="/empMaster") Back	

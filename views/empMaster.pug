@@ -1,0 +1,84 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		style 
+			include index.css
+		title Home
+	body
+		h1 Employee Master
+		div(class="master")
+			h4 Adding new employee
+			form(action="/addEmployee" method="GET")
+				input( 
+					type="submit"
+					value="Add"
+					class='btn'
+				)
+			h4 To view all employees
+			form(action="/employees" method="GET")
+				input( 
+					type="submit"
+					value="View All"
+					class='btn'
+				)
+			label.control-label Status
+			form(action="/employees/status" method="POST")
+				div(class='status') 
+					label.radio.inline 
+					input(
+						type="radio"
+						id="status1"
+						name="status"
+						value="Yes"
+					)
+					|Yes
+					input(
+						type="radio"
+						id="status2"
+						name="status"
+						value="No"
+					) 
+					|No
+					input(
+						type="submit"
+						value="View"
+						class='btn'
+					)
+			h4 To view an employee details
+			form(action="/employees/id" method="POST")
+				div(class='emp')
+				fieldset 
+					input(
+						type="number"
+						id="id" 
+						name="id" 
+						required
+					)
+					input( 
+						type="submit"
+						value="Find"
+						class='btn'
+					)
+			h4 Updating an exsisting employee
+			form(action="/updateEmployee" method="GET")
+				input( 
+					type="submit"
+					value="Update"
+					class='btn'
+				)
+			h4 To delete an employee
+			form(action="/delete" method="POST")
+				div(class='emp')
+				fieldset 
+					input(
+						type="number"
+						id="id" 
+						name="id" 
+						required
+					)
+					input( 
+						type = "submit"
+						value = "Delete"
+						class='btn'
+					)
+				a(href="/dashboard") Back

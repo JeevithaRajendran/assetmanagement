@@ -1,0 +1,37 @@
+html 
+		head
+				link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+				style 
+					include index.css
+				title Login
+		body
+				h1 Asset Management
+				div(class='login')
+					form(action="/" method="POST")
+						div(class='email')
+								i(class="fas fa-envelope")
+								input(
+										type="email"
+										id="email"
+										name="email"
+										placeholder="Email"
+										required
+								)
+						div(class='password')
+								i(class="fas fa-key")
+								input(
+										type="password"
+										id="password"
+										name="password"
+										placeholder="Password"
+										required
+								)
+						div
+								input(
+										type="submit" 
+										value="Login"
+										class='btn'
+								)  
+						a(href="/register") Register
+						
+				

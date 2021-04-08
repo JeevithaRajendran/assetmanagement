@@ -1,0 +1,38 @@
+html
+	head
+		title Asset History
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		style 
+			include index.css
+	body
+		div(class="content")
+			div(class="container")
+				h1 Asset History
+				div(class="table-responsive")
+					table(class="table table-bordered")
+						thead
+							tr
+								th Asset ID
+								th Name
+								th DateOfPurchase
+								th Issue Date
+								th Return Date
+								th Emp Id
+								th Emp Name
+								th Scrap Date
+						tbody
+							each history in histories
+								tr
+									td #{history.assetId}  
+									td #{history.name}
+									td #{history.dateofpurchase}
+									td #{history.issuedate}
+									td #{history.returndate}
+									td #{history.empId}
+									td #{history.empName}
+									td #{history.scrapdate}

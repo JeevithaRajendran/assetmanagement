@@ -1,0 +1,300 @@
+h1 {
+  text-align: center;
+  color: midnightblue;
+  top: 30px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+} 
+
+/* CSS for login and register page */
+.login {
+  width: 280px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:midnightblue;
+}
+.name {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+.name i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.name input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.email {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0; 
+}
+.email i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.email input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.password {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;  
+}
+.password i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.password input {
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+/* CSS for dashboard */
+.dashboard {
+  width: 280px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:midnightblue;
+}
+/* CSS for employee master */
+
+.master {
+  width: 280px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:midnightblue;
+}
+
+.emp input {
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+
+
+/*CSS for Updating an Employee detail*/
+/*CSS for Adding an Employee detail*/
+
+.update {
+  width: 280px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:midnightblue;
+}
+.id {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0; 
+}
+.id i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.id input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.name {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+.name i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.name input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.designation {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0; 
+}
+.designation i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.designation input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.dept {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0; 
+}
+.dept i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.dept input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.branch {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;  
+}
+.branch i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.branch input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.status {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;  
+}
+.status i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.status input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.doj {
+  width: 100%;
+  overflow: hidden;
+  background:aliceblue;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0; 
+}
+.doj i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.doj input {
+  border: none;
+  outline: none;
+  color:black;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+/* For all form button */
+.btn{
+  width: 15%;
+  background: none;
+  border: 2px ;
+  background-color: midnightblue;
+  padding: 5px;
+  font-size: 18px;
+  color: aliceblue;
+  cursor: pointer;
+  margin: 12px 0;
+}
+.btn:hover {
+  opacity: 2;
+}
+
+

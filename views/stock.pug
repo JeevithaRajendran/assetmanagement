@@ -1,0 +1,49 @@
+html
+	head
+		title Stock
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		style 
+			include index.css
+	body
+		div(class="content")
+			div(class="container")
+				h1 Stock
+				div(class="table-responsive")
+					table(class="table table-bordered")
+						thead
+							tr
+								th Asset Id
+								th Asset Name
+								th Model Name
+								th In-Branch
+						tbody
+							each stock in stocks
+								tr
+									td #{stock.assetId}
+									td #{stock.name}
+									td #{stock.model}
+									td #{stock.branch}
+			div(class="container")
+				h1 Assets in each branch
+				div(class="table-responsive")
+					table(class="table table-bordered")
+						thead
+							tr
+								th Asset in CBE branch
+								th Asset in Sankari branch
+						tbody
+							tr
+								td #{asset}
+								td #{assets}								
+						tfoot
+							tr
+								th Total
+								td #{total}
+
+									
+

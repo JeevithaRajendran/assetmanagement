@@ -1,0 +1,46 @@
+html 
+		head
+				link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+				style 
+					include index.css
+				title Register
+		body
+				h1 Register
+				div(class='login')
+					form(action="/register" method="POST")
+							div(class='name')
+									i(class="fas fa-user")
+									input(
+											type="text"
+											id= "name"
+											name= "name"
+											placeholder= "Name"
+											required
+									)
+							div(class='email')
+									i(class="fas fa-envelope")
+									input(
+											type="email"
+											id="email"
+											name="email"
+											placeholder="email"
+											required
+									)
+							div(class='password')
+									i(class="fas fa-key")
+									input(
+											type="password"
+											id="password"
+											name="password"
+											placeholder="Password"
+											required
+									)
+							div
+									input(
+											type="submit" 
+											value="Register"
+											class='btn'
+									) 
+							a(href="/") Login
+							
+				

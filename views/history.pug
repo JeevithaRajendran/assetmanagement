@@ -1,0 +1,25 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		style 
+			include index.css
+		title Asset details
+body
+	h1 Adding a new asset
+	div(class='update')
+		form(action="/historyfindbyId" method="POST")
+			div(class='id')
+				input(
+					type="number"
+					id="id" 
+					name="id" 
+					placeholder="AssetID"
+					required
+				)
+			div
+				input(
+					type="submit"
+					value="Asset History"
+					class='btn'
+				)     
+			a(href="/assetMaster") Back		  

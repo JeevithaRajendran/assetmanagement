@@ -1,0 +1,84 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+		style 
+			include index.css
+		title Home
+	body
+		//- nav(class="navbar fixed-left navbar-expand-md bg-dark navbar-dark")
+		//- 	a(class="navbar-brand" href="") Dashboard
+		//- 	button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation")
+		//- 		span(class="navbar-toggler-icon")
+		//- 	div(class="leftside-navigation" tabindex="1" style="overflow: hidden; outline: none;")
+		//- 		ul(id="nav-accordion" class="sidebar-menu")
+		//- 			li
+		//- 				a(href="/dashboard" class="active")
+		//- 					i(class="fa fa-dashboard") Dashboard
+		//- 			li
+		//- 				a(href="/empMaster") 
+		//- 					i(class="fa fa-users") EmployeeMaster
+		//- 			li
+		//- 				a(href="/assetMaster") 
+		//- 					i(class="fa fa-fw fa-user") AssetMaster
+		//- 			li
+		//- 				a(href="/empMaster") 
+		//- 					i(class="fa fa-users") CategoryMaster
+		//- 			li
+		//- 				a(href="/") 
+		//- 					i(class="fa fa-fw fa-envelope") Logout 
+		div(class='dashboard')
+		h1 Asset Management
+			form(action="/empMaster" method="GET")
+				input( 
+					type="submit"
+					value="Employee Master"
+					class='btn'
+				)
+			form(action="/assetMaster" method="GET")
+					input( 
+						type="submit"
+						value="Asset Master"
+						class='btn'
+					)
+			form(action="/masters" method="GET")
+					input( 
+						type="submit"
+						value="Asset Category Master"
+						class='btn'
+					)
+			form(action="/Stocks" method="GET")
+					input( 
+						type="submit"
+						value="View stock"
+						class='btn'
+					)
+			form(action="/issue" method="GET")
+					input( 
+						type="submit"
+						value="Issue Asset"
+						class='btn'
+					)
+			form(action="/return" method="GET")
+					input( 
+						type="submit"
+						value="Return Asset"
+						class='btn'
+					)
+			form(action="/scrap" method="GET")
+					input( 
+						type="submit"
+						value="Scrap Asset"
+						class='btn'
+					)
+			form(action="/history" method="GET")
+					input( 
+						type="submit"
+						value="Asset History"
+						class='btn'
+					)
+			a(href="/") Logout

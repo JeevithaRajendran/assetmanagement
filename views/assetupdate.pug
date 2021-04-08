@@ -1,0 +1,62 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		style 
+			include index.css
+		title Asset details
+body
+	h1 Updating an exsisting Asset
+	div(class='update')
+		form(action="/assetupdate" method="POST")
+			div(class='id')
+				input(
+				type="number"
+				id="id" 
+				name="id" 
+				placeholder="AssetID"
+				required
+				)
+			div(class='name')    
+				input( 
+				type="text"
+				id="name" 
+				name="name" 
+				placeholder="Asset Name" 
+				required
+				) 
+			div(class='name')    
+				input( 
+				type="text"
+				id="model" 
+				name="model" 
+				placeholder="Model" 
+				required
+				) 
+			div(class='name')
+				input(
+				type="date"
+				id="dateofpurchase"
+				name="dateofpurchase"
+				placeholder="dateofpurchase"
+				required
+				)    
+			div(class='name')
+				input(
+				type="text"
+				id="serialnumber"
+				name="serialnumber"
+				placeholder="Serial Number"
+				required
+				)
+			div
+				input(
+				type="submit"
+				value="Update"
+				class='btn'
+				)
+				input(
+				type="reset"
+				value="Reset"
+				class='btn'
+				)      
+			a(href="/assetMaster") Back			  

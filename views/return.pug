@@ -1,0 +1,55 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		style 
+			include index.css
+		title Return Asset
+body
+	h1 Returning Asset to office
+	div(class='update')
+		form(action="/returnAsset" method="POST")
+			div(class='id')
+				input(
+					type="number"
+					id="empId" 
+					name="empId" 
+					placeholder="EmployeeID"
+					required
+				)
+			div(class='name')
+				input( 
+					type="text"
+					id="empName" 
+					name="empName" 
+					placeholder="Employee Name"
+					required
+				)
+			div(class='name')
+				input( 
+					type="text"
+					id="name" 
+					name="name" 
+					placeholder="Asset Name"
+					required
+				)
+			div(class='name')
+				input(
+					type="text"
+					id="branch"
+					name="branch"
+					placeholder="Returning asset to branch"
+					required
+				)
+			div(class='name')
+				label(for="status") Reason for returning :
+				select(name="status" id="status")
+					option(value="Upgrade") Upgrade
+					option(value="Repair") Repair
+					option(value="Available") Resignation
+			div
+				input(
+					type="submit"
+					value="Return Asset"
+					class='btn'
+				)
+			a(href="/dashboard") Back

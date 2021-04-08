@@ -1,0 +1,48 @@
+html 
+	head
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous")
+		style 
+			include index.css
+		title Issue Asset
+body
+	h1 Issue Asset to an employee
+	div(class='update')
+		form(action="/issueAsset" method="POST")
+			div(class='id')
+				input(
+					type="number"
+					id="assetId" 
+					name="assetId" 
+					placeholder="AssetID"
+					required
+				)
+			div(class='name')    
+				input( 
+					type="text"
+					id="name" 
+					name="name" 
+					placeholder="Asset Name" 
+					required
+				)
+			div(class='id')
+				input(
+					type="number"
+					id="empId" 
+					name="empId" 
+					placeholder="EmployeeID"
+					required
+				)
+			div(class='name')    
+				input( 
+					type="text"
+					id="empName" 
+					name="empName" 
+					placeholder="Employee Name"
+				)
+			div
+				input(
+					type="submit"
+					value="Assign"
+					class='btn'
+				)   
+			a(href="/dashboard") Back		  
